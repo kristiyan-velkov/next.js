@@ -171,8 +171,8 @@ export function TopBar({
 
             <Select
               value={environmentFilter}
-              onValueChange={(value: Environment) =>
-                setEnvironmentFilter(value)
+              onValueChange={(value) =>
+                setEnvironmentFilter(value as Environment)
               }
             >
               <SelectTrigger className="w-28">
